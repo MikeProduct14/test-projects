@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Демо-прототип B2B-лендинга контрактного производства бытовой химии под СТМ: формулы, документы, маркировка, фасовка и расчет проекта."
+    />
+    <title>СТМ Формула | Контрактное производство бытовой химии</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2300737a'/%3E%3Cpath d='M20 48h24c5 0 8-4 6-9L39 15v-4h2V7H23v4h2v4L14 39c-2 5 1 9 6 9Z' fill='%23f7fbfb'/%3E%3Cpath d='M20 38h24l2 5H18l2-5Z' fill='%2300a6b2'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="На первый экран">
+        <span class="brand-mark" aria-hidden="true">СТМ</span>
+        <span>
+          <strong>СТМ Формула</strong>
+          <small>бытовая химия под вашим брендом</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#products">Продукты</a>
+        <a href="#process">Сроки</a>
+        <a href="#documents">Документы</a>
+        <a href="#economy">Расчет</a>
+        <a href="#request">Заявка</a>
+      </nav>
+
+      <a class="header-phone" href="tel:+79873736639" data-track="phone_click">
+        8 987 373-66-39
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-photo"
+          src="./assets/hero-lab.png"
+          alt="Лабораторный стол, образцы, документы и линия фасовки бытовой химии"
+        />
+        <div class="hero-overlay"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Контрактное производство для B2B</p>
+            <h1
+              id="hero-title"
+              data-variant-a="Контрактное производство бытовой химии под СТМ: от формулы до отгрузки"
+              data-variant-b="Запустите свой бренд бытовой химии с документами и маркировкой"
+            >
+              Контрактное производство бытовой химии под СТМ: от формулы до отгрузки
+            </h1>
+            <p class="hero-lead">
+              Рассчитаем себестоимость, подберем безопасный состав, подготовим
+              документы для маркетплейсов, GTIN и данные для системы "Честный ЗНАК".
+            </p>
+
+            <div class="hero-badges" aria-label="Ключевые преимущества">
+              <span>СГР и декларация ЕАЭС</span>
+              <span>Паспорт безопасности</span>
+              <span>Расчет за 24 часа</span>
+            </div>
+
+            <div class="hero-actions" aria-label="Основные действия">
+              <a class="button primary" href="#request" data-track="cta_click">
+                Рассчитать проект бесплатно
+              </a>
+              <a class="button secondary" href="#process">Посмотреть этапы</a>
+            </div>
+
+            <dl class="hero-stats" aria-label="Ориентиры запуска">
+              <div>
+                <dt>5-7 дней</dt>
+                <dd>подбор или адаптация формулы</dd>
+              </div>
+              <div>
+                <dt>14+ дней</dt>
+                <dd>сертификация и документы</dd>
+              </div>
+              <div>
+                <dt>1 партия</dt>
+                <dd>тестовый запуск перед масштабом</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="hero-panel" aria-label="Быстрый расчет проекта">
+            <span class="panel-kicker">Для селлеров и сетей</span>
+            <strong>Получите расчет партии, тары и сроков до завтра</strong>
+            <p>
+              Укажите категорию, объем и канал продаж. Менеджер подготовит
+              ориентир по себестоимости, документам и маркировке.
+            </p>
+            <a href="#request" data-track="cta_click">Заполнить бриф</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="audience section" aria-labelledby="audience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Кому подойдет</p>
+          <h2 id="audience-title">Для тех, кто выбирает подрядчика и считает экономику запуска</h2>
+          <p>
+            Лендинг закрывает вопросы владельцев брендов, селлеров маркетплейсов
+            и компаний, которые масштабируют ассортимент бытовой химии.
+          </p>
+        </div>
+
+        <div class="card-grid three">
+          <article class="info-card">
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3>Селлеры маркетплейсов</h3>
+            <p>
+              Быстрый запуск геля для стирки, кондиционера, чистящей пасты или
+              жидкого мыла с учетом GTIN, Data Matrix и юнит-экономики.
+            </p>
+          </article>
+          <article class="info-card">
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3>Локальные бренды и сети</h3>
+            <p>
+              Повторяемая партия, понятный класс опасности, документы для
+              проверок и этикетка без рискованных формулировок.
+            </p>
+          </article>
+          <article class="info-card">
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3>Компании на масштабе</h3>
+            <p>
+              Расчет больших объемов, варианты фасовки, логистика, упаковка и
+              стабильность состава между партиями.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="products section tinted" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Ассортимент</p>
+          <h2 id="products-title">Производим бытовую химию под вашей торговой маркой</h2>
+          <p>
+            Можно запустить продукт на базе действующей формулы или адаптировать
+            состав под позиционирование, класс опасности, аромат и упаковку.
+          </p>
+        </div>
+
+        <div class="product-layout">
+          <div class="product-list">
+            <article>
+              <h3>Стирка и уход за тканями</h3>
+              <p>Гели для стирки, кондиционеры, пятновыводители, концентраты.</p>
+            </article>
+            <article>
+              <h3>Чистота дома</h3>
+              <p>Чистящие пасты, средства для кухни, пола, стекол и сантехники.</p>
+            </article>
+            <article>
+              <h3>Личная и профессиональная гигиена</h3>
+              <p>Жидкое мыло, гели, нейтральные моющие составы для HoReCa и офиса.</p>
+            </article>
+            <article>
+              <h3>Концентраты и спецформаты</h3>
+              <p>Составы под дой-паки, канистры, ведра, флаконы и нестандартную тару.</p>
+            </article>
+          </div>
+
+          <figure class="image-feature">
+            <img
+              src="./assets/quality-control.png"
+              alt="Образцы флаконов, этикетка и лабораторный контроль качества"
+            />
+            <figcaption>
+              Сохраняем повторяемость партии: ПАВ-система, отдушки, консерванты,
+              стабильность цвета и совместимость с упаковкой.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="process section" id="process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Процесс и сроки</p>
+          <h2 id="process-title">Понятный маршрут от ТЗ до отгрузки</h2>
+          <p>
+            На старте фиксируем требования к составу, объему, упаковке,
+            маркетплейсам и документам. Так проект не теряет недели на уточнения.
+          </p>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <span>01</span>
+            <h3>Бриф и ТЗ</h3>
+            <p>Категория, целевая цена, канал продаж, объем, тара и сроки.</p>
+            <strong>1 день</strong>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Формула</h3>
+            <p>Подбор действующей формулы или адаптация под бренд и свойства.</p>
+            <strong>5-7 дней</strong>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Пробная партия</h3>
+            <p>Образцы, тесты стабильности, аромат, вязкость, цвет, фасовка.</p>
+            <strong>7-10 дней</strong>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Класс опасности</h3>
+            <p>Проверяем состав, маркировку, меры предосторожности и требования.</p>
+            <strong>2-4 дня</strong>
+          </li>
+          <li>
+            <span>05</span>
+            <h3>Документы</h3>
+            <p>СГР, декларация о соответствии ЕАЭС, паспорт безопасности.</p>
+            <strong>14+ дней</strong>
+          </li>
+          <li>
+            <span>06</span>
+            <h3>Этикетка и маркировка</h3>
+            <p>GTIN, Data Matrix, "Честный ЗНАК", состав и адрес производства.</p>
+            <strong>3-5 дней</strong>
+          </li>
+          <li>
+            <span>07</span>
+            <h3>Производство и фасовка</h3>
+            <p>Сырье, смешивание, розлив, этикетирование, групповая упаковка.</p>
+            <strong>7-21 день</strong>
+          </li>
+          <li>
+            <span>08</span>
+            <h3>Отгрузка</h3>
+            <p>Партия уходит на склад, в ритейл, на маркетплейс или к 3PL.</p>
+            <strong>по графику</strong>
+          </li>
+        </ol>
+      </section>
+
+      <section class="documents section tinted" id="documents" aria-labelledby="documents-title">
+        <div class="section-heading">
+          <p class="eyebrow">Документы и требования</p>
+          <h2 id="documents-title">Берем на себя документацию, чтобы продукт спокойно прошел проверки</h2>
+          <p>
+            Показываем клиенту, что подрядчик понимает не только производство,
+            но и регуляторные требования к бытовой химии.
+          </p>
+        </div>
+
+        <div class="document-grid">
+          <article>
+            <span aria-hidden="true">СГР</span>
+            <h3>Свидетельство о госрегистрации</h3>
+            <p>Подготавливаем пакет данных и сопровождаем оформление для нужных категорий.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">ЕАЭС</span>
+            <h3>Декларация о соответствии</h3>
+            <p>Фиксируем требования регламентов, состав и корректные формулировки.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">SDS</span>
+            <h3>Паспорт безопасности</h3>
+            <p>Описываем свойства, меры предосторожности, хранение и транспортировку.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">GTIN</span>
+            <h3>Штрихкоды и Data Matrix</h3>
+            <p>Готовим данные для "Честного ЗНАКА" и поставок в маркетплейсы.</p>
+          </article>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <strong>Не уверены, какие документы нужны под вашу категорию?</strong>
+            <p>Разберем состав, класс опасности, фасовку и канал продаж до запуска партии.</p>
+          </div>
+          <a class="button primary" href="#request" data-track="cta_click">Получить консультацию</a>
+        </div>
+      </section>
+
+      <section class="economy section" id="economy" aria-labelledby="economy-title">
+        <div class="section-heading">
+          <p class="eyebrow">Расчет объема и себестоимости</p>
+          <h2 id="economy-title">Считаем не только производство, но и экономику продажи</h2>
+          <p>
+            Поможем сравнить фасовку, тару, упаковку, логистику и минимальные партии,
+            чтобы продукт не ломал юнит-экономику на Ozon, Wildberries или в ритейле.
+          </p>
+        </div>
+
+        <div class="economy-layout">
+          <div class="cost-card">
+            <span class="panel-kicker">Пример для демо</span>
+            <h3>10 000 шт. геля для стирки 1 л</h3>
+            <dl>
+              <div>
+                <dt>Формула</dt>
+                <dd>адаптация под аромат, вязкость и класс опасности</dd>
+              </div>
+              <div>
+                <dt>Тара</dt>
+                <dd>флакон 1 л, крышка, транспортная коробка</dd>
+              </div>
+              <div>
+                <dt>Маркировка</dt>
+                <dd>GTIN, Data Matrix, этикетка с составом и мерами предосторожности</dd>
+              </div>
+              <div>
+                <dt>Срок запуска</dt>
+                <dd>28-45 дней при готовом ТЗ и согласованной таре</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="insight-grid">
+            <article>
+              <h3>Фасовка</h3>
+              <p>Флаконы, канистры, дой-паки, ведра, групповые короба и паллеты.</p>
+            </article>
+            <article>
+              <h3>Себестоимость</h3>
+              <p>Сырье, тара, этикетка, документы, маркировка, производство и логистика.</p>
+            </article>
+            <article>
+              <h3>Партии</h3>
+              <p>Пробный запуск, регулярные поставки и масштабирование под прогноз продаж.</p>
+            </article>
+            <article>
+              <h3>Каналы</h3>
+              <p>Маркетплейсы, локальные сети, ритейл, HoReCa и корпоративные продажи.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="marketplaces section tinted" aria-labelledby="marketplaces-title">
+        <div class="split">
+          <div class="section-heading left">
+            <p class="eyebrow">Маркетплейсы и этикетка</p>
+            <h2 id="marketplaces-title">Готовим продукт к поставкам без лишних возвратов и блокировок</h2>
+            <p>
+              Учитываем требования карточки товара, этикетки, адреса производства,
+              состава, мер предосторожности, штрихкодов и маркировки.
+            </p>
+            <a class="button primary" href="#request" data-track="cta_click">
+              Проверить требования к продукту
+            </a>
+          </div>
+
+          <ul class="check-panel">
+            <li>Данные для системы "Честный ЗНАК" и Data Matrix.</li>
+            <li>GTIN и штрихкоды для партии и единицы товара.</li>
+            <li>Состав, назначение, класс опасности и меры предосторожности.</li>
+            <li>Адрес производства и юридически корректные формулировки.</li>
+            <li>Подготовка к поставкам на Ozon, Wildberries, Яндекс Маркет и в сети.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="safety section" aria-labelledby="safety-title">
+        <div class="section-heading">
+          <p class="eyebrow">Безопасность составов</p>
+          <h2 id="safety-title">Стабильная партия без сюрпризов после запуска</h2>
+          <p>
+            В бытовой химии важно не только "хорошо моет", но и чтобы состав
+            оставался стабильным, соответствовал заявленному классу опасности и
+            не создавал рисков для бренда.
+          </p>
+        </div>
+
+        <div class="safety-row">
+          <article>
+            <h3>ПАВ-система</h3>
+            <p>Подбираем моющую основу под задачу: стирка, сантехника, кухня, полы.</p>
+          </article>
+          <article>
+            <h3>Отдушки и консерванты</h3>
+            <p>Смотрим совместимость, стойкость аромата, pH и требования к этикетке.</p>
+          </article>
+          <article>
+            <h3>Контроль партии</h3>
+            <p>Фиксируем параметры, чтобы повторные поставки не отличались от первой.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cases section tinted" aria-labelledby="cases-title">
+        <div class="section-heading">
+          <p class="eyebrow">Кейсы и сценарии</p>
+          <h2 id="cases-title">Примеры проектов, которые можно показать заказчику</h2>
+          <p>
+            Для боевой версии эти карточки заменяются реальными кейсами,
+            фотографиями партии, документами и результатами продаж.
+          </p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <span>Ozon</span>
+            <h3>Гель для стирки под СТМ</h3>
+            <p>50 000 шт., запуск за 28 дней, СГР, этикетка, GTIN и маркировка.</p>
+            <strong>Результат: партия готова к поставке на маркетплейс.</strong>
+          </article>
+          <article class="case-card">
+            <span>Retail</span>
+            <h3>Линейка чистящих средств</h3>
+            <p>3 SKU для локальной сети, единая упаковка, декларации ЕАЭС.</p>
+            <strong>Результат: повторяемая партия для регулярных поставок.</strong>
+          </article>
+          <article class="case-card">
+            <span>HoReCa</span>
+            <h3>Концентрат для клининга</h3>
+            <p>Канистры 5 л, паспорт безопасности, контроль класса опасности.</p>
+            <strong>Результат: продукт адаптирован под профессиональное применение.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="guarantees section" aria-labelledby="guarantees-title">
+        <div class="section-heading">
+          <p class="eyebrow">Гарантии и управление рисками</p>
+          <h2 id="guarantees-title">Фиксируем ответственность до старта производства</h2>
+          <p>
+            Важные условия лучше проговорить заранее: сроки, параметры качества,
+            документы, согласование макетов и сценарий, если партия требует доработки.
+          </p>
+        </div>
+
+        <div class="guarantee-list">
+          <article>
+            <h3>Стабильность качества</h3>
+            <p>Партия сверяется с утвержденными параметрами состава, цвета, запаха и вязкости.</p>
+          </article>
+          <article>
+            <h3>Соблюдение сроков</h3>
+            <p>Критичные этапы фиксируются в плане: формула, документы, тара, производство.</p>
+          </article>
+          <article>
+            <h3>Юридическая корректность</h3>
+            <p>Этикетка, документы и паспорт безопасности проходят проверку до печати.</p>
+          </article>
+          <article>
+            <h3>План действий при сбое</h3>
+            <p>Для спорных ситуаций заранее описываются доработка, замена или компенсация.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pricing section tinted" aria-labelledby="pricing-title">
+        <div class="section-heading">
+          <p class="eyebrow">Пакетные решения</p>
+          <h2 id="pricing-title">Три понятных сценария запуска без расплывчатых обещаний</h2>
+          <p>
+            Цифры ниже - демо-ориентиры для структуры лендинга. В рабочей версии
+            они заменяются на реальные минимальные объемы и условия производства.
+          </p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <span>Старт</span>
+            <h3>Пробная партия</h3>
+            <p class="price-volume">1 000-3 000 шт.</p>
+            <ul>
+              <li>Действующая формула или быстрая адаптация.</li>
+              <li>Базовый расчет себестоимости.</li>
+              <li>Подбор тары и этикетки.</li>
+              <li>План документов для категории.</li>
+            </ul>
+          </article>
+          <article class="price-card accent">
+            <span>Стандарт</span>
+            <h3>Регулярные поставки</h3>
+            <p class="price-volume">10 000-30 000 шт./мес.</p>
+            <ul>
+              <li>Формула под позиционирование бренда.</li>
+              <li>СГР, декларация ЕАЭС, паспорт безопасности.</li>
+              <li>GTIN, Data Matrix и данные для "Честного ЗНАКА".</li>
+              <li>Производственный календарь и контроль партии.</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <span>Масштаб</span>
+            <h3>Крупные партии</h3>
+            <p class="price-volume">50 000+ шт./мес.</p>
+            <ul>
+              <li>Расчет нескольких SKU и фасовок.</li>
+              <li>Оптимизация себестоимости и логистики.</li>
+              <li>График поставок под сеть или маркетплейсы.</li>
+              <li>Отдельный менеджер проекта.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="request-section" id="request" aria-labelledby="request-title">
+        <div class="request-copy">
+          <p class="eyebrow">Заявка на расчет</p>
+          <h2 id="request-title">Подготовим расчет себестоимости и сроков за 24 часа</h2>
+          <p>
+            Заполните короткий бриф. Для демо форма показывает успешную отправку,
+            а в рабочей версии заявку можно отправлять в CRM, Telegram или email.
+          </p>
+
+          <div class="contact-card">
+            <strong>Можно сразу позвонить Артему</strong>
+            <a href="tel:+79873736639" data-track="phone_click">8 987 373-66-39</a>
+            <a href="https://wa.me/79873736639" data-track="messenger_click">Написать в WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="lead-form" novalidate>
+          <div class="form-row">
+            <label class="field" for="name">
+              <span>Имя</span>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" />
+              <small class="field-error"></small>
+            </label>
+
+            <label class="field" for="phone">
+              <span>Телефон</span>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 000-00-00" />
+              <small class="field-error"></small>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="field" for="email">
+              <span>Email</span>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@company.ru" />
+              <small class="field-error"></small>
+            </label>
+
+            <label class="field" for="category">
+              <span>Категория товара</span>
+              <select id="category" name="category">
+                <option value="">Выберите категорию</option>
+                <option>Гель для стирки</option>
+                <option>Кондиционер для белья</option>
+                <option>Чистящие средства</option>
+                <option>Жидкое мыло</option>
+                <option>Концентраты</option>
+                <option>Другая категория</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label class="field" for="volume">
+              <span>Желаемый объем</span>
+              <input id="volume" name="volume" type="text" placeholder="Например, 10 000 шт./мес." />
+              <small class="field-error"></small>
+            </label>
+
+            <label class="field" for="deadline">
+              <span>Срок запуска</span>
+              <select id="deadline" name="deadline">
+                <option value="">Выберите срок</option>
+                <option>Нужно быстро, до 30 дней</option>
+                <option>1-2 месяца</option>
+                <option>3+ месяца</option>
+                <option>Пока считаю экономику</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+          </div>
+
+          <label class="field" for="channel">
+            <span>Канал продаж</span>
+            <select id="channel" name="channel">
+              <option value="">Выберите канал</option>
+              <option>Ozon</option>
+              <option>Wildberries</option>
+              <option>Яндекс Маркет</option>
+              <option>Розничная сеть</option>
+              <option>HoReCa / B2B</option>
+              <option>Несколько каналов</option>
+            </select>
+            <small class="field-error"></small>
+          </label>
+
+          <label class="field" for="comment">
+            <span>Комментарий</span>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="4"
+              placeholder="Опишите продукт, упаковку, пожелания к составу или действующий аналог"
+            ></textarea>
+            <small class="field-error"></small>
+          </label>
+
+          <label class="consent">
+            <input id="consent" name="consent" type="checkbox" />
+            <span>
+              Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности и
+              обработкой персональных данных.
+            </span>
+          </label>
+          <small class="field-error consent-error" aria-live="polite"></small>
+
+          <button class="button primary form-button" type="submit" data-track="lead_submit_attempt">
+            Получить расчет
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="#top" aria-label="На первый экран">
+          <span class="brand-mark" aria-hidden="true">СТМ</span>
+          <span>
+            <strong>СТМ Формула</strong>
+            <small>контрактное производство бытовой химии</small>
+          </span>
+        </a>
+        <p>
+          Демо-прототип лендинга. Реквизиты, юридическое лицо, политика
+          конфиденциальности и оферта добавляются после согласования заказчика.
+        </p>
+      </div>
+
+      <address>
+        <strong>Контакты</strong>
+        <a href="tel:+79873736639" data-track="phone_click">8 987 373-66-39, Артем</a>
+        <a href="mailto:sales@example.ru">sales@example.ru</a>
+        <a href="https://wa.me/79873736639" data-track="messenger_click">WhatsApp</a>
+      </address>
+
+      <nav aria-label="Юридические ссылки">
+        <strong>Документы</strong>
+        <a href="#request">Политика конфиденциальности</a>
+        <a href="#request">Оферта</a>
+        <a href="#documents">Сертификация</a>
+      </nav>
+    </footer>
+
+    <script src="./script.js?v=3"></script>
+  </body>
+</html>
