@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Прототип минималистичного премиального лендинга шахматного тренера: личный бренд, результаты учеников и запись на пробное занятие."
+    />
+    <title>Шахматный тренер | Прототип лендинга</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23070908'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='38' fill='%23d4af37'%3E%E2%99%94%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="На первый экран">
+        <span class="brand-mark">♔</span>
+        <span>
+          <strong>[Имя тренера]</strong>
+          <small>шахматный тренер</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#program">Программа</a>
+        <a href="#about">О тренере</a>
+        <a href="#results">Результаты</a>
+        <a href="#booking">Запись</a>
+      </nav>
+
+      <a class="header-cta" href="#booking">Пробное занятие</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-photo"
+          src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=1800&q=85"
+          alt="Шахматная доска с фигурами в темном зале"
+        />
+        <div class="hero-overlay"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Индивидуальные занятия онлайн и очно</p>
+            <h1 id="hero-title">Шахматный тренер для уверенной игры и роста рейтинга</h1>
+            <p class="hero-lead">
+              Персональная программа для детей и взрослых: диагностика партии,
+              тактика, стратегия, дебютный репертуар и подготовка к турнирам.
+            </p>
+
+            <div class="hero-actions" aria-label="Основные действия">
+              <a class="button primary" href="#booking">Записаться на пробное</a>
+              <a class="button secondary" href="#program">Смотреть программу</a>
+            </div>
+
+            <dl class="hero-stats" aria-label="Ключевые показатели тренера">
+              <div>
+                <dt>FIDE</dt>
+                <dd>указать рейтинг</dd>
+              </div>
+              <div>
+                <dt>80+</dt>
+                <dd>учеников прошли курс</dd>
+              </div>
+              <div>
+                <dt>4.9</dt>
+                <dd>средняя оценка занятий</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="trial-card" aria-label="Быстрая запись">
+            <span class="live-dot"></span>
+            <p>Ближайшие окна</p>
+            <strong>2 свободных слота на этой неделе</strong>
+            <a href="#booking">Выбрать время</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="trust-band" aria-label="Доверие и преимущества">
+        <div class="trust-item">
+          <span>01</span>
+          <strong>Разбор уровня</strong>
+          <p>Стартуем с партии ученика и понятной карты роста.</p>
+        </div>
+        <div class="trust-item">
+          <span>02</span>
+          <strong>Личный план</strong>
+          <p>Домашние задания и темы под цель, а не общий шаблон.</p>
+        </div>
+        <div class="trust-item">
+          <span>03</span>
+          <strong>Контроль прогресса</strong>
+          <p>Фиксируем ошибки, сильные стороны и следующие шаги.</p>
+        </div>
+      </section>
+
+      <section class="section" id="program">
+        <div class="section-heading">
+          <p class="eyebrow">Программа</p>
+          <h2>Занятия строятся вокруг цели ученика</h2>
+          <p>
+            Лендинг показывает не просто услуги, а понятный путь: от диагностики
+            до результата на доске или турнире.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-icon">♙</span>
+            <h3>Для начинающих</h3>
+            <p>База, тактическое зрение, матовые конструкции и уверенная игра без хаоса.</p>
+          </article>
+          <article class="service-card featured">
+            <span class="card-icon">♞</span>
+            <h3>Рост рейтинга</h3>
+            <p>Разбор партий, типовые ошибки, эндшпиль и дебютный репертуар под стиль.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">♜</span>
+            <h3>Турнирная подготовка</h3>
+            <p>Психология, тайм-менеджмент, подготовка к соперникам и план на соревнование.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-icon">♛</span>
+            <h3>Для детей</h3>
+            <p>Живые занятия с игровой подачей, дисциплиной и понятной обратной связью родителям.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="about">
+        <div class="portrait-panel">
+          <img
+            src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=1200&q=85"
+            alt="Шахматные фигуры крупным планом"
+          />
+          <div class="portrait-caption">
+            <strong>Фото тренера сюда</strong>
+            <span>На прототипе стоит тематический плейсхолдер</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">Личный бренд</p>
+          <h2>[Имя Фамилия], тренер с системным подходом</h2>
+          <p>
+            В этом блоке раскрываем опыт, достижения, рейтинг, методику и стиль
+            преподавания. Главное — показать, почему ученику спокойно доверить
+            тренеру свой прогресс.
+          </p>
+
+          <ul class="check-list">
+            <li>КМС / мастер FIDE / другой подтвержденный статус.</li>
+            <li>Опыт занятий с детьми, взрослыми и турнирными игроками.</li>
+            <li>Понятная обратная связь после каждого занятия.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section results-section" id="results">
+        <div class="section-heading">
+          <p class="eyebrow">Результаты</p>
+          <h2>Доказательства вместо громких обещаний</h2>
+          <p>Карточки легко заменить реальными кейсами, дипломами, рейтингами и отзывами.</p>
+        </div>
+
+        <div class="results-grid">
+          <article class="result-card">
+            <span>+180</span>
+            <h3>пунктов рейтинга</h3>
+            <p>Ученик 11 лет после 4 месяцев системных занятий.</p>
+          </article>
+          <article class="result-card">
+            <span>1 место</span>
+            <h3>на городском турнире</h3>
+            <p>Фокус на дебюте, расчете вариантов и спокойной игре в цейтноте.</p>
+          </article>
+          <article class="result-card">
+            <span>12 недель</span>
+            <h3>до уверенной базы</h3>
+            <p>Для взрослых учеников, которые начинают с нуля или возвращаются к игре.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-labelledby="testimonials-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Отзывы</p>
+          <h2 id="testimonials-title">Что говорят ученики</h2>
+        </div>
+
+        <div class="testimonial-row">
+          <figure class="testimonial-card">
+            <blockquote>
+              "После первых занятий стало понятно, что ошибки не случайные. Появился план, и партии стали спокойнее."
+            </blockquote>
+            <figcaption>Анна, взрослый ученик</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>
+              "Сын начал сам разбирать партии и перестал бросать фигуры в один ход. Очень нравится структура."
+            </blockquote>
+            <figcaption>Марина, мама ученика</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>
+              "Готовились к турниру: разобрали дебюты и типовые позиции. Результат стал заметен быстро."
+            </blockquote>
+            <figcaption>Илья, турнирный игрок</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking" aria-labelledby="booking-title">
+        <div class="booking-copy">
+          <p class="eyebrow">Запись</p>
+          <h2 id="booking-title">Оставьте заявку на пробное занятие</h2>
+          <p>
+            После отправки тренер свяжется в Telegram или по Email, уточнит цель
+            и предложит удобное время. Интеграцию можно подключить к Telegram-боту
+            или почте администратора.
+          </p>
+        </div>
+
+        <form class="lead-form" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Например, Михаил" />
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="contact">Telegram, телефон или Email</label>
+            <input
+              id="contact"
+              name="contact"
+              type="text"
+              autocomplete="email"
+              placeholder="@username или name@email.com"
+            />
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="format">Формат занятий</label>
+            <select id="format" name="format">
+              <option value="">Выберите формат</option>
+              <option>Онлайн</option>
+              <option>Очно</option>
+              <option>Пока не знаю</option>
+            </select>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="goal">Цель занятий</label>
+            <textarea
+              id="goal"
+              name="goal"
+              rows="4"
+              placeholder="Например, подготовиться к турниру или научить ребенка играть с нуля"
+            ></textarea>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <button class="button primary submit-button" type="submit">
+            <span class="button-label">Отправить заявку</span>
+            <span class="button-loader" aria-hidden="true"></span>
+          </button>
+
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="privacy-note">
+            Нажимая кнопку, вы соглашаетесь на обработку данных. Ссылку на политику
+            конфиденциальности можно добавить в финальной версии.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 [Имя тренера]</span>
+      <a href="mailto:coach@example.com">coach@example.com</a>
+      <a href="#">Telegram</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
